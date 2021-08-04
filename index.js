@@ -8,8 +8,11 @@ const multer = require("multer");
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const postRoute = require("./routes/posts");
+const conversationRoute = require("./routes/conversations");
+const messageRoute = require("./routes/messages");
 const router = express.Router();
 const path = require("path");
+
 
 dotenv.config();
 const DB = `mongodb+srv://friendsbookDBAdmin:AdminPassword@cluster0.9gqcg.mongodb.net/friendsbookDb?retryWrites=true&w=majority`;
@@ -49,7 +52,8 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
-
+app.use("/api/conversations", conversationRoute);
+app.use("/api/messages", messageRoute);
 
 // step 3: Heroku 
 if ( process.env.NODE_ENV == "production"){
