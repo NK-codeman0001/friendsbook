@@ -1,14 +1,11 @@
 import "./sidebar.css";
 import {
-  RssFeed,
-  Chat,
-  PlayCircleFilledOutlined,
-  Group,
-  Bookmark,
-  HelpOutline,
-  WorkOutline,
-  Event,
-  School,
+//  HomeIcon,
+//  InfoIcon,
+//  GitHubIcon,
+//  ContactsIcon,
+//  ExploreIcon,
+//  ExitToAppIcon,
 } from "@material-ui/icons";
 import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
@@ -17,51 +14,35 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
+        <h4>Quick Access</h4>
+        <br />
         <ul className="sidebarList">
           <li className="sidebarListItem">
-            <RssFeed className="sidebarIcon" />
-            <span className="sidebarListItemText">Feed</span>
+            {/* <HomeIcon className="sidebarIcon" /> */}
+            <span className="sidebarListItemText">Homepage</span>
           </li>
           <li className="sidebarListItem">
-            <Chat className="sidebarIcon" />
-            <span className="sidebarListItemText">Chats</span>
+            {/* <InfoIcon className="sidebarIcon" /> */}
+            <span className="sidebarListItemText">About Us</span>
           </li>
           <li className="sidebarListItem">
-            <PlayCircleFilledOutlined className="sidebarIcon" />
-            <span className="sidebarListItemText">Videos</span>
+            {/* <ExploreIcon className="sidebarIcon" /> */}
+            <span className="sidebarListItemText">Explore</span>
           </li>
           <li className="sidebarListItem">
-            <Group className="sidebarIcon" />
-            <span className="sidebarListItemText">Groups</span>
+            {/* <ContactsIcon className="sidebarIcon" /> */}
+            <span className="sidebarListItemText">Contact Us</span>
           </li>
           <li className="sidebarListItem">
-            <Bookmark className="sidebarIcon" />
-            <span className="sidebarListItemText">Bookmarks</span>
+            {/* <GitHubIcon className="sidebarIcon" /> */}
+            <span className="sidebarListItemText">Source Code</span>
           </li>
           <li className="sidebarListItem">
-            <HelpOutline className="sidebarIcon" />
-            <span className="sidebarListItemText">Questions</span>
-          </li>
-          <li className="sidebarListItem">
-            <WorkOutline className="sidebarIcon" />
-            <span className="sidebarListItemText">Jobs</span>
-          </li>
-          <li className="sidebarListItem">
-            <Event className="sidebarIcon" />
-            <span className="sidebarListItemText">Events</span>
-          </li>
-          <li className="sidebarListItem">
-            <School className="sidebarIcon" />
-            <span className="sidebarListItemText">Courses</span>
+            {/* <ExitToAppIcon className="sidebarIcon" /> */}
+            <span className="sidebarListItemText">Log Out</span>
           </li>
         </ul>
-        <button className="sidebarButton">Show More</button>
-        <hr className="sidebarHr" />
-        <ul className="sidebarFriendList">
-          {Users.map((u) => (
-            <CloseFriend key={u.id} user={u} />
-          ))}
-        </ul>
+        
       </div>
     </div>
   );

@@ -15,32 +15,40 @@ export default function Topbar() {
         </Link>
       </div>
       <div className="topbarCenter">
-        <div className="searchbar">
+        {/* <div className="searchbar">
           <Search className="searchIcon" />
           <input
             placeholder="Search for friend, post or video"
             className="searchInput"
           />
-        </div>
+        </div> */}
       </div>
       <div className="topbarRight">
         <div className="topbarLinks">
-          <span className="topbarLink">Homepage</span>
-          <span className="topbarLink">Timeline</span>
+          
+          <Link to="/" style={{ textDecoration: "none"}}>
+            <button className="topbarLink">Homepage</button>
+          </Link>
+          <Link to="/" style={{ textDecoration: "none"}}>
+            <button className="topbarLinklog">Log Out</button>
+          </Link>
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">
+          <Link to="/user" style={{ textDecoration: "none" ,color:"white"}}>
             <Person />
-            <span className="topbarIconBadge">1</span>
+           </Link>
+         
           </div>
-          <div className="topbarIconItem">
+        
+          {/* <div className="topbarIconItem">
             <Chat />
             <span className="topbarIconBadge">2</span>
           </div>
           <div className="topbarIconItem">
             <Notifications />
             <span className="topbarIconBadge">1</span>
-          </div>
+          </div> */}
         </div>
         <Link to={`/profile/${user.username}`}>
           <img
