@@ -31,7 +31,9 @@
   align-items: center;
   margin-bottom: 20px;
 }
-
+.sidebarListItem a {
+text-decoration: none;
+}
 .sidebarIcon {
   margin-right: 15px;
 }

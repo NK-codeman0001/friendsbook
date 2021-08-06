@@ -1,12 +1,5 @@
 import "./sidebar.css";
-import {
-//  HomeIcon,
-//  InfoIcon,
-//  GitHubIcon,
-//  ContactsIcon,
-//  ExploreIcon,
-//  ExitToAppIcon,
-} from "@material-ui/icons";
+
 import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
 
@@ -19,27 +12,27 @@ export default function Sidebar() {
         <ul className="sidebarList">
           <li className="sidebarListItem">
             {/* <HomeIcon className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Homepage</span>
+            <span className="sidebarListItemText"><a href="/">Homepage</a></span>
           </li>
           <li className="sidebarListItem">
             {/* <InfoIcon className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">About Us</span>
+            <span className="sidebarListItemText"><a href="/about">About Us</a></span>
           </li>
           <li className="sidebarListItem">
             {/* <ExploreIcon className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Explore</span>
+            <span className="sidebarListItemText"><a href="/explore"> Explore </a></span>
           </li>
           <li className="sidebarListItem">
             {/* <ContactsIcon className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Contact Us</span>
+            <span className="sidebarListItemText"><a href="/contact">Contact Us</a></span>
           </li>
           <li className="sidebarListItem">
             {/* <GitHubIcon className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Source Code</span>
+            <span className="sidebarListItemText"><a href="https://github.com/NK-codeman0001/friendsbook">Source Code</a></span>
           </li>
           <li className="sidebarListItem">
             {/* <ExitToAppIcon className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Log Out</span>
+            <span className="sidebarListItemText"><a href="/logout">Log Out</a></span>
           </li>
         </ul>
         

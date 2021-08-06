@@ -36,7 +36,7 @@ export default function Topbar() {
         <div className="topbarIcons">
           <div className="topbarIconItem">
           <Link to="/user" style={{ textDecoration: "none" ,color:"white"}}>
-            <Person />
+            <Person /> Users 
            </Link>
          
           </div>
