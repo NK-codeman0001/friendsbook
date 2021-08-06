@@ -4,7 +4,7 @@ import Profile from "./pages/profile/Profile";
 import Register from "./pages/register/Register";
 import Users from "./pages/users/user";
 import About from "./pages/about/about";
-import Contact from "./pages/contact/contact";
+
 import Explore from "./pages/explore/explore";
 
 import {
@@ -41,9 +41,7 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
+       
         <Route path="/explore">
           <Explore />
         </Route>

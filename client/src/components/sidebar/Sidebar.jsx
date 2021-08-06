@@ -22,10 +22,7 @@ export default function Sidebar() {
             {/* <ExploreIcon className="sidebarIcon" /> */}
             <span className="sidebarListItemText"><a href="/explore"> Explore </a></span>
           </li>
-          <li className="sidebarListItem">
-            {/* <ContactsIcon className="sidebarIcon" /> */}
-            <span className="sidebarListItemText"><a href="/contact">Contact Us</a></span>
-          </li>
+          
           <li className="sidebarListItem">
             {/* <GitHubIcon className="sidebarIcon" /> */}
             <span className="sidebarListItemText"><a href="https://github.com/NK-codeman0001/friendsbook">Source Code</a></span>
