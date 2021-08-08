@@ -107,7 +107,7 @@ export default function Rightbar({ user }) {
                   src={
                     friend.profilePicture
                       ? PF + friend.profilePicture
-                      : PF + "/noAvatar.png"
+                      : PF + "person/noAvatar.png"
                   }
                   alt=""
                   className="rightbarFollowingImg"

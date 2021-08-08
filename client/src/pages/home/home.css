@@ -2,3 +2,13 @@
     display: flex;
     width: 100%;
 }
+.con1{
+    width:25%;
+}
+.con2{
+    width:40%;
+}
+.con3{
+    margin-left: 3%;
+    width: 30%;
+}
